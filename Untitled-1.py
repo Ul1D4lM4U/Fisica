@@ -59,3 +59,4 @@ else:
     if a==0:
         print("Este objeto no se mueve")
 print("El objeto tiene una aceleracion de",a,"m/s^2 (Valor positivo: movimiento -> Valor negativo: <-)")
+#HOLA PROFE
