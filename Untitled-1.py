@@ -1,4 +1,6 @@
 import math
+import matplotlib.pyplot as plt
+import numpy as np
 def cal_ffe(a,b):
     ffe=a*b
     return ffe
@@ -46,5 +48,17 @@ if a<0:
     movimiento="<-"
 elif a>0:
     movimiento="->"
+    
 print("El objeto tiene una aceleracion de",a,"m/s^2 y se mueve hacia ",movimiento)
+tiempo=float(input("Ingrese el tiempo con el que quiere calcular y graficar la velocidad"))
+velocidad=0*tiempo+(1/2)*a*tiempo*2
+print(f"Su velocidad en el segundo {tiempo} va a ser de {velocidad}")
+
+plt.xlabel("Tiempo")
+plt.ylabel("Velocidad")
+x=np.linspace(0,tiempo)
+y=0*x+(1/2)*a*x*2
+plt.plot(x, y)
+plt.show()
+
 #HOLA PROFE!
